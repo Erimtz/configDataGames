@@ -13,11 +13,12 @@ spring:
         - id: msgames
           uri: lb://games
           predicates:
-            - Path=/api/v1/games/**
+            - Path=/games/**
         - id: msgamesLibrary
           uri: lb://gamesLibrary
           predicates:
-            - Path=/api/v1/gamesLibrary/**
+            - Path=/gamesLibrary/**
+
 
 info:
   app:
